@@ -1,6 +1,7 @@
 //Daniel Davenport
 //This Code is my own
 #include <iostream>
+#include <string>
 using namespace std;
 
 
@@ -41,7 +42,7 @@ int main()
 
 	cout << "The Sum of the first 50 positive multiples of 7 is " << sum << endl;
 }
-*/
+
 int main()
 {
 	//Part 3
@@ -58,4 +59,32 @@ int main()
 		multiple++;
 		i++;
 	}
+}
+*/
+
+int main()
+{
+	int x, i;
+	bool tester = false;
+	char input[20];
+	cout << "Enter a word to see if it is a palindrome: \n";
+	cin >> input;
+	x = strlen(input);
+	
+	for (i = 0;i < x;i++)
+	{
+		if(input[i] != input[x-i-1])
+		{
+				tester = true;
+				break;
+		}
+	}
+
+	if (tester) {
+		cout << input << " is not a palindrome \n";
+	}
+	else {
+		cout << input << " is a palindrome\n";
+	}
+	return 0;
 }
