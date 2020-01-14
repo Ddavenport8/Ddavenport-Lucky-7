@@ -25,7 +25,7 @@ int main()
 
 	cout << "\nYour largest number is " << largest << " \nYour smallest number is " << smallest;
 }
-*/
+
 
 int main() 
 {
@@ -40,4 +40,22 @@ int main()
 	}
 
 	cout << "The Sum of the first 50 positive multiples of 7 is " << sum << endl;
+}
+*/
+int main()
+{
+	//Part 3
+	//Calculates and prints the first 10 terms of the factorial sequence.
+	
+	cout << "The first 10 terms of the factorial sequence starting at 1 are: ";
+	int i = 0;
+	int multiple = 1;
+	int x = 1;
+	while (i < 10)
+	{
+		x = x*multiple;
+		cout << x << " ";
+		multiple++;
+		i++;
+	}
 }
