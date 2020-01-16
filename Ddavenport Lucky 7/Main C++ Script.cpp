@@ -60,7 +60,7 @@ int main()
 		i++;
 	}
 }
-*/
+
 
 int main()
 {
@@ -87,4 +87,49 @@ int main()
 		cout << input << " is a palindrome\n";
 	}
 	return 0;
+	
+}
+*/
+
+int main()
+{
+
+	bool isPrime = false;
+	string final;
+	int input;
+	cout << "Input a positive integer to see if it is a prime number: \n";
+	cin >> input;
+	
+	int x = input / 2;
+	if (input < 0)
+	{
+		cout << "That is not a valid input";
+	}
+	else
+	{
+
+
+		for (int i = 2; i <= x; i++)
+		{
+			if (input % i == 0)
+			{
+				isPrime = false;
+			}
+			else
+			{
+				isPrime = true;
+			}
+
+		}
+		if (isPrime == true)
+		{
+			final = " is ";
+		}
+		else
+		{
+			final = " is not ";
+		}
+		cout << input << final << "a prime number \n";
+
+	}
 }
