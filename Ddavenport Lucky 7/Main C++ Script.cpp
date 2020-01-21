@@ -89,7 +89,7 @@ int main()
 	return 0;
 	
 }
-*/
+
 
 int main()
 {
@@ -132,4 +132,21 @@ int main()
 		cout << input << final << "a prime number \n";
 
 	}
+	*/
+
+int main()
+{
+	int list [5] = {};
+	int i, numofint = 0;
+	float sum = 0;
+	cout << "Enter 5 integers to find their average \n";
+	
+	for (i = 0; i <= 4; i++)
+	{
+		cin >> list[i];
+		numofint++;
+		sum += list[i];
+	}
+
+	cout << "The average of those numbers is " << sum / numofint;
 }
